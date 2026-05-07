@@ -1,0 +1,17 @@
+project:
+  name: dolar-chile-forecast
+  version: 0.1.0
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  external: data/external
+  models: models
+  reports: reports
+
+model:
+  test_size: 0.2
+  random_state: 42
+
+data_sources:
+  banco_central_chile: https://si3.bcentral.cl/Siete
