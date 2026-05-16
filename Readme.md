@@ -69,6 +69,29 @@ Aplicacion interactiva con interfaz grafica (Streamlit) para buscar, seleccionar
 # Ejecutar la app
 streamlit run app_data_collector.py
 ```
+La app se abrira automaticamente en tu navegador
+
+🔐 Configuracion de credenciales
+La app requiere credenciales del Banco Central de Chile. Puedes configurarlas de dos formas:
+
+Opcion 1: Archivo .env (recomendado)
+Crea un archivo .env en la raiz del proyecto:
+
+```
+BCCH_EMAIL=tu_email@ejemplo.com
+BCCH_PASSWORD=tu_contraseña
+```
+
+Opcion 2: Manual
+Ingresa tus credenciales directamente en la barra lateral de la app.
+
+📋 Flujo de trabajo tipico
+
+1. Buscar series: Ve a "🔍 Buscar y Seleccionar", escribe una palabra clave (ej: "Tipo de Cambio"), filtra por frecuencia y marca las series que necesitas.
+2. Agregar al carrito: Presiona "➕ Agregar al carrito". Las series apareceran en la barra lateral.
+3. Descargar: Ve a "⬇️ Descargar Datos", selecciona el rango de fechas, frecuencia de salida, formato (CSV/Excel) y presiona "DESCARGAR TODAS".
+
+Listo: Los archivos se guardan en data/raw/ y puedes descargarlos directamente desde la app.
 
 ## 👤 Autor
 Javier Saldías A.
