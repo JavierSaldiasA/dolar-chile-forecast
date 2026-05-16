@@ -163,9 +163,6 @@ def detectar_frecuencia_por_id(series_id):
         "M": "MONTHLY",
         "Q": "QUARTERLY",
         "A": "ANNUAL",
-        "W": "WEEKLY",
-        "B": "BIWEEKLY",
-        "S": "SEMIANNUAL"
     }
     
     return mapeo.get(ultima_letra, "DAILY")
