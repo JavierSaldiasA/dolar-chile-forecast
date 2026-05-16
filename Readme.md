@@ -39,11 +39,35 @@ pip install -r requirements.txt
 
 ## 📈 Roadmap
 ```
-[ ] Fase 1: Recolección de datos
+✅ Fase 1: Recolección de datos
 [ ] Fase 2: Análisis Exploratorio (EDA)
 [ ] Fase 3: Feature Engineering
 [ ] Fase 4: Modelado y Evaluación
 [ ] Fase 5: Dashboard y API
+```
+## 🏛️ BCCH Data Collector Pro
+
+Aplicacion interactiva con interfaz grafica (Streamlit) para buscar, seleccionar y descargar series de datos del **Banco Central de Chile** de forma profesional.
+
+### ✨ Caracteristicas
+
+| Funcionalidad | Descripcion |
+|---------------|-------------|
+| 🔍 **Buscador de series** | Busca por palabra clave con filtros por frecuencia (diaria, mensual, trimestral, anual) |
+| ✅ **Seleccion multiple** | Marca series con checkboxes persistentes y agregalas a un carrito |
+| 📝 **IDs directos** | Ingresa Series ID manualmente sin necesidad de buscar |
+| 📁 **Carga CSV** | Sube un archivo CSV con multiples Series ID |
+| 🧠 **Autodeteccion de frecuencia** | Detecta automaticamente la frecuencia desde la ultima letra del ID (D, M, Q, A) |
+| 📊 **Agregacion inteligente** | Cambia la frecuencia de salida: diaria → mensual, mensual → anual, etc. |
+| 🩹 **Imputacion de NaN** | Rellena valores faltantes con forward fill, backward fill, interpolacion, etc. |
+| 📈 **Variacion** | Calcula variacion en periodos (mensual, anual, etc.) |
+| 📁 **Formato de salida** | CSV o Excel (.xlsx), archivo unico o separado por serie |
+
+### 🚀 Como usar la app
+
+```
+# Ejecutar la app
+streamlit run app_data_collector.py
 ```
 
 ## 👤 Autor
