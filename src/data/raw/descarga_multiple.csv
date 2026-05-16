@@ -1,4 +1,4 @@
-date,Tipo de cambio dólar,Precio del cobre refinado BML (dólar/libra),Tasa de política monetaria (TPM),Unidad de fomento (UF),Imacec (Base 2018 = 100),IPC General (Base 2023 = 100)
+date,Tipo de cambio dólar,Precio del cobre refinado BML (dólar-libra),Tasa de política monetaria (TPM),Unidad de fomento (UF),Imacec (Base 2018 = 100),IPC General (Base 2023 = 100)
 2020-01-01,,,,28310.86,99.726585989509,104.24
 2020-01-02,748.74,2.8069,1.75,28311.77,99.726585989509,104.24
 2020-01-03,754.16,2.7892,1.75,28312.68,99.726585989509,104.24

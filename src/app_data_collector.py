@@ -198,12 +198,12 @@ def determinar_modo_operacion(series_seleccionadas, frecuencia_salida_es):
     if nivel_salida <= nivel_min:
         # Salida igual o mas desagregada que la serie mas desagregada
         # Solo imputacion (para las series menos desagregadas)
-        return False, True, f"Frecuencia de salida mas desagregada. Solo se ofrece imputacion para series con frecuencia menor."
+        return False, True, f"Frecuencia de salida mas desagregada. Se ofrece imputacion para series con frecuencia menor."
     
     elif nivel_salida >= nivel_max:
         # Salida igual o menos desagregada que la serie menos desagregada
         # Solo agregacion (para las series mas desagregadas)
-        return True, False, f"Frecuencia de salida menos desagregada. Solo se ofrece agregacion para series con frecuencia mayor."
+        return True, False, f"Frecuencia de salida menos desagregada. Se ofrece agregacion para series con frecuencia mayor."
     
     else:
         # Salida intermedia
@@ -546,7 +546,7 @@ with tab2:
         archivo_cargado = st.file_uploader("Sube un CSV con Series ID y Nombre ", type=["csv"], key="uploader_csv")
         if archivo_cargado is not None:
             df_cargado = pd.read_csv(archivo_cargado)
-            st.write("Columnas encontradas:", df_cargado.columns.tolist())
+            st.write("Columnas encontradas:")
             st.dataframe(df_cargado.head(), use_container_width=True)
             
             # Detectar columna de Series ID
